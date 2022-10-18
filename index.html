@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Função Funciona?</h1>
+    <hr>
+    <h3>1) Quantos anos tem o seu pet? e 2) Não acabou não?</h3>
+    <hr>
+    <div class="ex1-2">
+        <form>
+                <label>Qual é a idade do seu PET ? <input type="number" id="idade"></label>
+            </br>
+                <label>Qual é o nome dele ? <input type="text" id="nome"></label>
+            </br>
+                <label>Qual a espécie ? <input type="text" id="especie"></label>
+            </br>
+                <input type="button" value="Calcular" onclick="IdadePetConversão(document.getElementById('idade').value ,document.getElementById('nome').value ,document.getElementById('especie').value) ">
+
+        </form>
+
+        <div id="resposta_1">
+        </div>
+    </div>
+    <hr>
+    <h3>3) Quanta fome a gente tem?</h3>
+    <hr>
+    <div class="3">
+        <form>
+            <label>Qual sua idade? <input type="number" id="idade_2"></label>
+        </br>
+            <label>Qual a quantidade de lanches consumido por dia ? <input type="number" id="quantidade_de_lanches_por_dia"></label>
+        </br>
+            <input type="button" value="Calcular" onclick="MeuLanche(document.getElementById('idade_2').value ,document.getElementById('quantidade_de_lanches_por_dia').value) ">
+
+        </form>
+
+        <div id="resposta_2">
+        </div>
+
+    </div>
+    <hr>
+    <h3>4) Geometria? Nós dominamos!</h3>
+    <hr>
+    <div class="3">
+        <form>
+            <p>Calcule uma Circunferencia </p>
+            <label>Qual o valor de R <input type="number" id="raio"></label>
+        </br>
+            <input type="button" value="Calcular" onclick="calcularCircunferencia(document.getElementById('raio').value ) ">
+
+        </form>
+
+        <div id="resposta_3">
+        </div>
+
+    </div>
+<hr>
+    <div class="4">
+        <form>
+            <p>Calcule a Area </p>
+            <label>Qual o valor de H <input type="number" id="altura"></label>
+
+            <label>Qual o valor de B <input type="number" id="base"></label>
+        </br>
+            <input type="button" value="Calcular" onclick="calcularArea(document.getElementById('base').value,document.getElementById('altura').value ) ">
+
+        </form>
+
+        <div id="resposta_4">
+        </div>
+
+    </div>
+    <hr>
+    <h3>5) Tá quente. Muito quente. Quente demaaaais.</h3>
+    <hr>
+    <div class="5">
+        <form>
+            <h3>Celsius → Fahrenheit</h3>
+            <label>Insira o valor de Celsius <input type="number" id="Celsius"></label>
+        </br>
+            <input type="button" value="Calcular" onclick="converterCelsiusFahrenheit(document.getElementById('Celsius').value) ">
+        </form>
+
+        <div id="resposta_5">
+        </div>
+
+        <form>
+            <h3> Celsius ← Fahrenheit</h3>
+            <label>insira o valor de Fahrenheit<input type="number" id="Fahrenheit"></label>
+        </br>
+            <input type="button" value="Calcular" onclick="converterFahrenheitCelsius(document.getElementById('Fahrenheit').value) ">
+
+        </form>
+
+        <div id="resposta_6">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
